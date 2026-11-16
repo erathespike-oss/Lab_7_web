@@ -1,0 +1,181 @@
+GET /api/events -> 200
+[{"id":1,"location":"Room 101","title":"Web Design Workshop"},{"id":2,"location":"Room 202","title":"JavaScript Quiz"},{"id":3,"location":"Conference Hall","title":"IT Career Talk"}]
+
+GET /api/events?title=qUiZ -> 200
+[{"id":2,"location":"Room 202","title":"JavaScript Quiz"}]
+
+GET /api/events?title=NO_MATCH -> 200
+[]
+
+GET /api/events?title= -> 200
+[{"id":1,"location":"Room 101","title":"Web Design Workshop"},{"id":2,"location":"Room 202","title":"JavaScript Quiz"},{"id":3,"location":"Conference Hall","title":"IT Career Talk"}]
+
+GET /api/events/1 -> 200
+{"id":1,"location":"Room 101","title":"Web Design Workshop"}
+
+GET /api/events/999 -> 404
+{"message":"Event with id 999 was not found"}
+
+POST /api/events -> 400
+{"message":"Title and location must not be blank"}
+
+GET /api/events -> 200
+[{"id":1,"location":"Room 101","title":"Web Design Workshop"},{"id":2,"location":"Room 202","title":"JavaScript Quiz"},{"id":3,"location":"Conference Hall","title":"IT Career Talk"}]
+
+POST /api/events -> 400
+{"message":"Title and location must not be blank"}
+
+GET /api/events -> 200
+[{"id":1,"location":"Room 101","title":"Web Design Workshop"},{"id":2,"location":"Room 202","title":"JavaScript Quiz"},{"id":3,"location":"Conference Hall","title":"IT Career Talk"}]
+
+POST /api/events -> 400
+{"message":"Title and location must not be blank"}
+
+GET /api/events -> 200
+[{"id":1,"location":"Room 101","title":"Web Design Workshop"},{"id":2,"location":"Room 202","title":"JavaScript Quiz"},{"id":3,"location":"Conference Hall","title":"IT Career Talk"}]
+
+POST /api/events -> 400
+{"message":"Title and location must not be blank"}
+
+GET /api/events -> 200
+[{"id":1,"location":"Room 101","title":"Web Design Workshop"},{"id":2,"location":"Room 202","title":"JavaScript Quiz"},{"id":3,"location":"Conference Hall","title":"IT Career Talk"}]
+
+POST /api/events -> 400
+{"message":"Title and location must not be blank"}
+
+GET /api/events -> 200
+[{"id":1,"location":"Room 101","title":"Web Design Workshop"},{"id":2,"location":"Room 202","title":"JavaScript Quiz"},{"id":3,"location":"Conference Hall","title":"IT Career Talk"}]
+
+POST /api/events -> 400
+{"message":"Title and location must not be blank"}
+
+GET /api/events -> 200
+[{"id":1,"location":"Room 101","title":"Web Design Workshop"},{"id":2,"location":"Room 202","title":"JavaScript Quiz"},{"id":3,"location":"Conference Hall","title":"IT Career Talk"}]
+
+POST /api/events -> 400
+{"message":"Title and location must not be blank"}
+
+GET /api/events -> 200
+[{"id":1,"location":"Room 101","title":"Web Design Workshop"},{"id":2,"location":"Room 202","title":"JavaScript Quiz"},{"id":3,"location":"Conference Hall","title":"IT Career Talk"}]
+
+POST /api/events -> 400
+{"message":"Title and location must not be blank"}
+
+GET /api/events -> 200
+[{"id":1,"location":"Room 101","title":"Web Design Workshop"},{"id":2,"location":"Room 202","title":"JavaScript Quiz"},{"id":3,"location":"Conference Hall","title":"IT Career Talk"}]
+
+POST /api/events -> 400
+{"message":"Title and location must not be blank"}
+
+GET /api/events -> 200
+[{"id":1,"location":"Room 101","title":"Web Design Workshop"},{"id":2,"location":"Room 202","title":"JavaScript Quiz"},{"id":3,"location":"Conference Hall","title":"IT Career Talk"}]
+
+POST /api/events -> 201
+{"id":4,"location":"Room 105","title":"Spring Workshop"}
+
+GET /api/events -> 200
+[{"id":1,"location":"Room 101","title":"Web Design Workshop"},{"id":2,"location":"Room 202","title":"JavaScript Quiz"},{"id":3,"location":"Conference Hall","title":"IT Career Talk"},{"id":4,"location":"Room 105","title":"Spring Workshop"}]
+
+PUT /api/events/4 -> 400
+{"message":"Title and location must not be blank"}
+
+GET /api/events -> 200
+[{"id":1,"location":"Room 101","title":"Web Design Workshop"},{"id":2,"location":"Room 202","title":"JavaScript Quiz"},{"id":3,"location":"Conference Hall","title":"IT Career Talk"},{"id":4,"location":"Room 105","title":"Spring Workshop"}]
+
+PUT /api/events/4 -> 400
+{"message":"Title and location must not be blank"}
+
+GET /api/events -> 200
+[{"id":1,"location":"Room 101","title":"Web Design Workshop"},{"id":2,"location":"Room 202","title":"JavaScript Quiz"},{"id":3,"location":"Conference Hall","title":"IT Career Talk"},{"id":4,"location":"Room 105","title":"Spring Workshop"}]
+
+PUT /api/events/4 -> 400
+{"message":"Title and location must not be blank"}
+
+GET /api/events -> 200
+[{"id":1,"location":"Room 101","title":"Web Design Workshop"},{"id":2,"location":"Room 202","title":"JavaScript Quiz"},{"id":3,"location":"Conference Hall","title":"IT Career Talk"},{"id":4,"location":"Room 105","title":"Spring Workshop"}]
+
+PUT /api/events/4 -> 400
+{"message":"Title and location must not be blank"}
+
+GET /api/events -> 200
+[{"id":1,"location":"Room 101","title":"Web Design Workshop"},{"id":2,"location":"Room 202","title":"JavaScript Quiz"},{"id":3,"location":"Conference Hall","title":"IT Career Talk"},{"id":4,"location":"Room 105","title":"Spring Workshop"}]
+
+PUT /api/events/4 -> 400
+{"message":"Title and location must not be blank"}
+
+GET /api/events -> 200
+[{"id":1,"location":"Room 101","title":"Web Design Workshop"},{"id":2,"location":"Room 202","title":"JavaScript Quiz"},{"id":3,"location":"Conference Hall","title":"IT Career Talk"},{"id":4,"location":"Room 105","title":"Spring Workshop"}]
+
+PUT /api/events/4 -> 400
+{"message":"Title and location must not be blank"}
+
+GET /api/events -> 200
+[{"id":1,"location":"Room 101","title":"Web Design Workshop"},{"id":2,"location":"Room 202","title":"JavaScript Quiz"},{"id":3,"location":"Conference Hall","title":"IT Career Talk"},{"id":4,"location":"Room 105","title":"Spring Workshop"}]
+
+PUT /api/events/4 -> 400
+{"message":"Title and location must not be blank"}
+
+GET /api/events -> 200
+[{"id":1,"location":"Room 101","title":"Web Design Workshop"},{"id":2,"location":"Room 202","title":"JavaScript Quiz"},{"id":3,"location":"Conference Hall","title":"IT Career Talk"},{"id":4,"location":"Room 105","title":"Spring Workshop"}]
+
+PUT /api/events/4 -> 400
+{"message":"Title and location must not be blank"}
+
+GET /api/events -> 200
+[{"id":1,"location":"Room 101","title":"Web Design Workshop"},{"id":2,"location":"Room 202","title":"JavaScript Quiz"},{"id":3,"location":"Conference Hall","title":"IT Career Talk"},{"id":4,"location":"Room 105","title":"Spring Workshop"}]
+
+PUT /api/events/4 -> 400
+{"message":"Title and location must not be blank"}
+
+GET /api/events -> 200
+[{"id":1,"location":"Room 101","title":"Web Design Workshop"},{"id":2,"location":"Room 202","title":"JavaScript Quiz"},{"id":3,"location":"Conference Hall","title":"IT Career Talk"},{"id":4,"location":"Room 105","title":"Spring Workshop"}]
+
+PUT /api/events/4 -> 200
+{"id":4,"location":"Room 210","title":"Spring REST Workshop"}
+
+GET /api/events/4 -> 200
+{"id":4,"location":"Room 210","title":"Spring REST Workshop"}
+
+GET /api/events?title=REST -> 200
+[{"id":4,"location":"Room 210","title":"Spring REST Workshop"}]
+
+GET /api/events -> 200
+[{"id":1,"location":"Room 101","title":"Web Design Workshop"},{"id":2,"location":"Room 202","title":"JavaScript Quiz"},{"id":3,"location":"Conference Hall","title":"IT Career Talk"},{"id":4,"location":"Room 210","title":"Spring REST Workshop"}]
+
+PUT /api/events/999 -> 404
+{"message":"Event with id 999 was not found"}
+
+DELETE /api/events/999 -> 404
+{"message":"Event with id 999 was not found"}
+
+GET /api/events -> 200
+[{"id":1,"location":"Room 101","title":"Web Design Workshop"},{"id":2,"location":"Room 202","title":"JavaScript Quiz"},{"id":3,"location":"Conference Hall","title":"IT Career Talk"},{"id":4,"location":"Room 210","title":"Spring REST Workshop"}]
+
+DELETE /api/events/4 -> 204
+(empty body)
+
+GET /api/events/4 -> 404
+{"message":"Event with id 4 was not found"}
+
+DELETE /api/events/4 -> 404
+{"message":"Event with id 4 was not found"}
+
+GET /api/events -> 200
+[{"id":1,"location":"Room 101","title":"Web Design Workshop"},{"id":2,"location":"Room 202","title":"JavaScript Quiz"},{"id":3,"location":"Conference Hall","title":"IT Career Talk"}]
+
+POST /api/events -> 201
+{"id":5,"location":"Room 106","title":"After deletion"}
+
+GET /api/events -> 200
+[{"id":1,"location":"Room 101","title":"Web Design Workshop"},{"id":2,"location":"Room 202","title":"JavaScript Quiz"},{"id":3,"location":"Conference Hall","title":"IT Career Talk"},{"id":5,"location":"Room 106","title":"After deletion"}]
+
+GET /api/hello -> 200
+{"message":"Welcome to the Event Registration API"}
+
+GET /api/info -> 200
+{"semester":3,"applicationName":"event-registration-api","course":"Web Technologies"}
+
+AFTER RESTART
+GET /api/events -> 200, original events with IDs 1, 2, 3
+GET /api/events/4 -> 404
+GET /api/events/5 -> 404
